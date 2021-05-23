@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31229.75
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrossPlatform_UITest1", "CrossPlatform_UITest1.csproj", "{0C38B5AB-3B8C-4CD1-B8D6-274C3DCFF127}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinApp", "..\XamarinApp\XamarinApp.csproj", "{5787DD8C-C820-43CB-B156-DED9A40AC250}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UITest_UPS", "..\UITest_UPS\UITest_UPS.csproj", "{9093B9D5-996E-4B3F-B4BE-7C2BADCD0D91}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C38B5AB-3B8C-4CD1-B8D6-274C3DCFF127}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C38B5AB-3B8C-4CD1-B8D6-274C3DCFF127}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C38B5AB-3B8C-4CD1-B8D6-274C3DCFF127}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C38B5AB-3B8C-4CD1-B8D6-274C3DCFF127}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5787DD8C-C820-43CB-B156-DED9A40AC250}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5787DD8C-C820-43CB-B156-DED9A40AC250}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5787DD8C-C820-43CB-B156-DED9A40AC250}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5787DD8C-C820-43CB-B156-DED9A40AC250}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5787DD8C-C820-43CB-B156-DED9A40AC250}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5787DD8C-C820-43CB-B156-DED9A40AC250}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{9093B9D5-996E-4B3F-B4BE-7C2BADCD0D91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9093B9D5-996E-4B3F-B4BE-7C2BADCD0D91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9093B9D5-996E-4B3F-B4BE-7C2BADCD0D91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9093B9D5-996E-4B3F-B4BE-7C2BADCD0D91}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF27321B-A82D-48B5-A1FF-48BE457D08B9}
+	EndGlobalSection
+EndGlobal
