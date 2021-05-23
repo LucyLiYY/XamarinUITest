@@ -17,7 +17,7 @@ steps:
 
 - task: AppCenterTest@1
   inputs:
-    appFile: 'XamarinUITest/blob/main/bin/Debug/UPS%20Mobile_v9.2.0.8_apkpure.com.apk'
+    appFile: '$(buildConfiguration)/bin/Debug/UPS%20Mobile_v9.2.0.8_apkpure.com.apk'
     artifactsDirectory: '$(Build.ArtifactStagingDirectory)/AppCenterTest'
     frameworkOption: 'uitest'
     uiTestBuildDirectory: 'https://github.com/LucyLiYY/XamarinUITest/blob/main/bin/Debug/UPS%20Mobile_v9.2.0.8_apkpure.com.apk'
