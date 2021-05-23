@@ -1,0 +1,41 @@
+# Xamarin.Android
+# Build a Xamarin.Android project.
+# Add steps that test, sign, and distribute an app, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/xamarin
+
+trigger:
+- main
+
+pool:
+  vmImage: 'macos-latest'
+
+variables:
+  buildConfiguration: 'Release'
+  outputDirectory: '$(build.binariesDirectory)/$(buildConfiguration)'
+
+steps:
+
+- task: AppCenterTest@1
+  inputs:
+    appFile: 'https://github.com/LucyLiYY/XamarinUITest/blob/main/bin/Debug/UPS%20Mobile_v9.2.0.8_apkpure.com.apk'
+    artifactsDirectory: '$(Build.ArtifactStagingDirectory)/AppCenterTest'
+    frameworkOption: 'uitest'
+    uiTestBuildDirectory: 'https://github.com/LucyLiYY/XamarinUITest/blob/main/bin/Debug/UPS%20Mobile_v9.2.0.8_apkpure.com.apk'
+    credentialsOption: 'inputs'
+    username: 'Xamarin_Test_Pactera@outlook.com'
+    password: 'Yixing123+'
+    appSlug: 'https://appcenter.ms/users/13241589646-163.com/apps/Xamarin-UI-Test'
+    devices: '13241589646-163.com/paralleltestset'
+    localeOption: 'en_US'
+    
+- task: NuGetToolInstaller@1
+
+- task: NuGetCommand@2
+  inputs:
+    restoreSolution: '**/*.sln'
+
+- task: XamarinAndroid@1
+  inputs:
+    projectFile: '**/*droid*.csproj'
+    outputDirectory: '$(outputDirectory)'
+    configuration: '$(buildConfiguration)'
